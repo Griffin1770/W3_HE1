@@ -57,3 +57,91 @@ h1 {
     padding-left: 3em;
     padding-right: 3em;
 }
+
+.imgTextOverlay{
+    position: relative;
+    text-align: center;
+    color: #e3e7ef;
+    font-size: 20px;
+}
+
+.imgTextOverlay img{
+    width: 100%;
+}
+
+.bottomLeft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.bottomRight{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#filters{
+    filter: grayscale(100%)
+}
+
+#filters:hover{
+    filter: none
+}
+
+.container{
+    position: relative;
+    width: 50%;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #8e1313;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.overlayText{
+    color:#e3e7ef;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
