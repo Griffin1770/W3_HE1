@@ -22,11 +22,21 @@ body {
 }
 
 .topNav a:hover {
-    background-color: #8ca7e0;
+    background-color: #ca6354;
     color: black;
 }
 
 .topNav a.active {
-    background-color: #274dbf;
+    background-color: #8e1313;
     color: #e3e7ef;
+}
+
+header img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    opacity: 0.75;
+    border-radius: 15px;
 }
